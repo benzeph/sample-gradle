@@ -1,0 +1,16 @@
+apply plugin: 'java'
+
+ext {
+    junitVersion = '4.+'
+    seleniumVersion = '2.41.0'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile 'junit:junit:' + junitVersion
+    testCompile 'org.seleniumhq.selenium:selenium-firefox-driver:' + seleniumVersion
+    testCompile 'org.seleniumhq.selenium:selenium-support:' + seleniumVersion
+}

@@ -1,0 +1,7 @@
+allprojects {
+    apply plugin: 'idea'
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '1.9';
+}
